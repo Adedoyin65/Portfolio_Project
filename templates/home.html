@@ -1,32 +1,32 @@
 {% extends "layout.html" %}
 {% block content %}
 <div class="container-fluid">
-  <div id="navbar" class="flex bg-info">
+  <div id="navbar-main" class="flex bg-info">
     <h3 class="text-white">caloriekit<sup><small class="small1">TM</small></sup></h3>
-    <a href="" class="bg-dark text-white bor-rad text-white">START TODAY</a>
+    <a href="{{ url_for('login') }}" class="bg-dark text-white bor-rad text-white">START TODAY</a>
   </div>
-  <div id="navbar">
+  <div id="navbar-links">
     <a href="#home" class="text-info">Reviews</a>
     <a href="#news" class="text-info">How It Works</a>
     <a href="#contact" class="text-info">Apps</a>
   </div>
   <div class="container flex" id="hide">
     <h5 class="mt-1">caloriekit<sup><small class="small1">TM</small></sup></h5>
-    <li class="ml-auto list-unstyled"><a href="{{ url_for(login) }}"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+    <li class="ml-auto list-unstyled"><a href="{{ url_for('login') }}"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
   </div>
   <div class="container mt-4">
     <div class="flex-md text-center text-md-left">
       <div class="mb-3 mb-md-0">
         <p><span class="text-muted">#1 nutrition tracking app</span><br /><span class="big">Reach your goals</span><br /><span class="big1">with MyFitnessPal</span></p>
         <p>Build healthy habits with the all-in-one food, exercise, and calorie tracker.</p>
-        <a href="" class="bg-info bor-rad">START TODAY</a>
+        <a href="{{ url_for('login') }}" class="bg-info bor-rad">START TODAY</a>
       </div>
       <div>
-        <img src="{{ url_for(static, filename=images/hero-phone-large.webp) }}" class="img-fluid custom-img-size" alt="Hero Phone" />
+        <img src="{{ url_for('static', filename='images/hero-phone-large.webp') }}" class="img-fluid custom-img-size" alt="Hero Phone" />
       </div>
     </div>
   </div>
-  <div class="container bg-dark mt-5">
+  <div class="container bg-dark mt-5 long">
     <div class="move">
       <span class="fa fa-star checked"></span>
       <span class="fa fa-star checked"></span>

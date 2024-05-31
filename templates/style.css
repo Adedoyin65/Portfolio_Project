@@ -1,0 +1,89 @@
+li a {
+  font-size: 25px;
+}
+.small1 {
+  font-size: 8px;
+}
+.flex {
+  display: flex;
+}
+.flex li {
+  list-style: none;
+}
+.big {
+  font-size: 50px;
+  font-weight: 800;
+}
+.big1 {
+  font-size: 40px;
+}
+@media (min-width: 576px) {
+  .flex-md {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.custom-img-size {
+  width: 70%;
+  max-width: 300px;
+}
+.we {
+  width: 30%;
+  height: 200px;
+  margin: 3% auto;
+}
+.custom-shadow {
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.flex-md div a {
+  color: white;
+  text-decoration: none;
+}
+.bor-rad {
+  padding: 10px 15px;
+  border-radius: 0 50% 0 50%;
+}
+#navbar-main {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 1000;
+}
+#navbar-main a {
+  text-decoration: none;
+  font-weight: 900;
+  position: absolute;
+  right: 15px;
+}
+#navbar-links {
+  display: none;
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  z-index: 999;
+}
+#navbar-links a {
+  text-decoration: none;
+  margin: auto 10px;
+  font-weight: 900;
+}
+.checked {
+  color: orange;
+}
+.long {
+  height: 250px;
+}
+.move {
+  width: 20%;
+  position: relative;
+  left: 45%;
+  padding-top: 5%;
+}
+.move span {
+  font-size: 14px;
+}
